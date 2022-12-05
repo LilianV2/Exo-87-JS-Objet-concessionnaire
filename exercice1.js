@@ -10,6 +10,21 @@ let voiture = {
     "vitesseMaxi" : "120km/h"
 };
 
+let cont = document.getElementById('container')
+let img = document.createElement('img')
+
+img.src = voiture.imgUrl;
+cont.appendChild(img);
+
+cont.innerHTML += "<br>"
+cont.innerHTML += voiture.Contructeur + "<br>";
+cont.innerHTML += voiture.Nom + "<br>";
+cont.innerHTML += voiture.Couleur + "<br>";
+cont.innerHTML += voiture.nombrePortes + " portes<br>";
+cont.innerHTML += voiture.nombresRoues + " motrices<br>";
+cont.innerHTML += voiture.Autonomie + " d\'autonomie<br>";
+cont.innerHTML += " fonctionne au carburant " + voiture.Carburant + "<br>";
+cont.innerHTML += " max : " + voiture.vitesseMaxi + "<br>";
 
 
 
